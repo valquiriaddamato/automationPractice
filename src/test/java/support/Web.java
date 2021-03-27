@@ -11,7 +11,7 @@ public class Web {
     @Given("^that I access the 'Automation practice' page$")
     public static WebDriver createChrome(){
         // Opening the browser
-        System.setProperty("webdriver.chrome.driver","C:\\chromedriver\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver","./src/test/java/support/driver/chromedriver.exe");
         WebDriver browser = new ChromeDriver();
         browser.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         browser.manage().window().maximize();
