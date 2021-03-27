@@ -4,7 +4,6 @@
 - Have JDK installed on the machine
 - Have maven installed on the machine
 - Have Java and Maven environment variables set on machine
-- Put chromedriver.exe in the "C:\chromedriver" directory
 - Download the project to the machine in directory "C:"
 
 #### Run project
