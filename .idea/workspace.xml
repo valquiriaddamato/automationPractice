@@ -5,7 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="169ff718-9039-44e0-96c3-bd21f949ccf9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/steps/MyAccountStepsDefinitions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/steps/SignInStepsDefinitions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/SignInFormPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/SignInFormPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/SignInPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/SignInPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/support/Web.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/BaseStepDefinitions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/support/driver/chromedriver.exe" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/drivers/chromedriver.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/LoginTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/RegisterCustomerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/RegisterCustomerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/LoginTest.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/LoginTest.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-tests.LoginTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-tests.RegisterCustomerTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/tests.LoginTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/tests.RegisterCustomerTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/LoginTest.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/LoginTest.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/HomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/HomePage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/SignInFormPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/SignInFormPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/SignInPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/SignInPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/support/Web.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/LoginTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/LoginTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/RegisterCustomerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/RegisterCustomerTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +60,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/java/support/driver" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../automationCucumber" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.5367816" />
@@ -52,7 +74,11 @@
       <recent name="C:\Users\valqu\Desktop\automationPractice\src\test\java\support\driver" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\valqu\Desktop\automationPractice\src\test\resources" />
       <recent name="C:\Users\Valquiria\Automaçao de Testes\automationPractice\src\test\resources" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="steps" />
     </key>
   </component>
   <component name="RunManager" selected="JUnit.LoginTest">

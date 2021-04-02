@@ -1,6 +1,5 @@
 package pages;
 
-import io.cucumber.java.en.And;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -154,7 +153,6 @@ public class SignInFormPage extends BasePage{
         return this;
     }
 
-    @And("^I click the 'Register' button$")
     public MyAccountPage clickOnRegister(){
         //Click the 'Register' button
         browser.findElement(By.id("submitAccount")).click();
@@ -162,7 +160,6 @@ public class SignInFormPage extends BasePage{
         return new MyAccountPage(browser);
     }
 
-    @And("^fill in the required data of my user$")
    public MyAccountPage registerCustomer(String firstName, String lastName, String emailFilled, String password, String day,
                                       String month, String year, String firstNameAddress, String lastNameAddress, String company,
                                       String address, String city, String state, String postalCode, String country, String mobilePhone,
