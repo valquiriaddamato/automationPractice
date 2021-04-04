@@ -1,27 +1,27 @@
 package steps;
 
-import io.cucumber.java.en.Given;
+import generations.EmailCreate;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.WebDriver;
 import pages.SignInPage;
-import steps.BaseStepDefinitions;
 
 public class SignInStepsDefinitions {
 
-    private BaseStepDefinitions context;
+    private BaseStepsDefinitions context;
     private WebDriver browser;
     private SignInPage signInPage;
+    private EmailCreate emailRandom;
+    public static String email;
 
-    public SignInStepsDefinitions(BaseStepDefinitions context) {
+    public SignInStepsDefinitions(BaseStepsDefinitions context) {
         this.context = context;
         browser = this.context.browser;
         signInPage = new SignInPage(browser);
     }
 
-    @Given("^I click in Sign In Link$")
+    @When("^I click in Sign In Link$")
     public void clickOnSignInLink(){
         signInPage.clickOnSignIn();
-
     }
 
     @When("^I login with the email (.*) and password (.*)$")
@@ -29,5 +29,13 @@ public class SignInStepsDefinitions {
         signInPage.emailLoginForm(email);
         signInPage.passwordLoginForm(password);
         signInPage.clickOnSignInFormLogin();
+    }
+
+    @When("^I fill in the email and then confirm the start of registration$")
+    public void startRegistration(){
+        emailRandom = new EmailCreate();
+        email = emailRandom.emailCreate();
+        signInPage.emailSignInForm(email);
+        signInPage.clickOnCreateAnAccount();
     }
 }

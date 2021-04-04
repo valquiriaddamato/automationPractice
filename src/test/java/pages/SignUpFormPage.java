@@ -7,47 +7,49 @@ import org.openqa.selenium.support.ui.Select;
 
 import static org.junit.Assert.assertEquals;
 
-public class SignInFormPage extends BasePage{
-    public SignInFormPage(WebDriver browser) {
+public class SignUpFormPage extends BasePage{
+
+    public SignUpFormPage(WebDriver browser) {
         super(browser);
     }
-    public SignInFormPage selectTitle(){
+
+    public SignUpFormPage selectTitle(){
         //Select title
         browser.findElement(By.id("id_gender2")).click();
 
         return this;
     }
 
-    public SignInFormPage firstName(String firstName){
+    public SignUpFormPage firstName(String firstName){
         //Fill in first name
         browser.findElement(By.id("customer_firstname")).sendKeys(firstName);
 
         return this;
     }
 
-    public SignInFormPage lastName(String lastName){
+    public SignUpFormPage lastName(String lastName){
         //Fill in last name
         browser.findElement(By.id("customer_lastname")).sendKeys(lastName);
 
         return this;
     }
 
-    public SignInFormPage checkEmailFilled(String emailFilled){
+    public SignUpFormPage checkEmailFilled(String emailFilled){
         //Checks if the email has already been filled
         String validEmail = browser.findElement(By.id("email")).getAttribute("value");
-        assertEquals(emailFilled, validEmail);
+        assertEquals(validEmail, emailFilled);
 
         return this;
     }
 
-    public SignInFormPage password(String password){
+    public SignUpFormPage password(String password){
         //Fill in password
         browser.findElement(By.id("passwd")).sendKeys(password);
 
         return this;
     }
 
-    public SignInFormPage dayOfBirth(String day){
+    public SignUpFormPage dayOfBirth(String day){
         //Select day of birth
         WebElement selectDays = browser.findElement(By.id("days"));
         new Select(selectDays).selectByValue(day);
@@ -55,7 +57,7 @@ public class SignInFormPage extends BasePage{
         return this;
     }
 
-    public SignInFormPage monthOfBirth(String month){
+    public SignUpFormPage monthOfBirth(String month){
         //Select month of birth
         WebElement selectMonth = browser.findElement(By.id("months"));
         new Select(selectMonth).selectByValue(month);
@@ -63,7 +65,7 @@ public class SignInFormPage extends BasePage{
         return this;
     }
 
-    public SignInFormPage YearOfBirth(String year){
+    public SignUpFormPage YearOfBirth(String year){
         //Select year of birth
         WebElement selectYear = browser.findElement(By.id("years"));
         new Select(selectYear).selectByValue(year);
@@ -71,14 +73,14 @@ public class SignInFormPage extends BasePage{
         return this;
     }
 
-    public SignInFormPage selectNewsletter(){
+    public SignUpFormPage selectNewsletter(){
         //Select newsletter
         browser.findElement(By.id("newsletter")).click();
 
         return this;
     }
 
-    public SignInFormPage firstNameAddress(String firstNameAddress){
+    public SignUpFormPage firstNameAddress(String firstNameAddress){
         //Fill in first name address
         browser.findElement(By.id("firstname")).clear();
         browser.findElement(By.id("firstname")).sendKeys(firstNameAddress);
@@ -86,7 +88,7 @@ public class SignInFormPage extends BasePage{
         return this;
     }
 
-    public SignInFormPage lastNameAddress(String lastNameAddress){
+    public SignUpFormPage lastNameAddress(String lastNameAddress){
         //Fill in last name address
         browser.findElement(By.id("lastname")).clear();
         browser.findElement(By.id("lastname")).sendKeys(lastNameAddress);
@@ -94,28 +96,28 @@ public class SignInFormPage extends BasePage{
         return this;
     }
 
-    public SignInFormPage companyName(String company){
+    public SignUpFormPage companyName(String company){
         //Fill in company name
         browser.findElement(By.id("company")).sendKeys(company);
 
         return this;
     }
 
-    public SignInFormPage address(String address){
+    public SignUpFormPage address(String address){
         //Fill in address
         browser.findElement(By.id("address1")).sendKeys(address);
 
         return this;
     }
 
-    public SignInFormPage city(String city){
+    public SignUpFormPage city(String city){
         //Fill in city
         browser.findElement(By.id("city")).sendKeys(city);
 
         return this;
     }
 
-    public SignInFormPage state(String state){
+    public SignUpFormPage state(String state){
         //Select state
         WebElement selectState = browser.findElement(By.id("id_state"));
         new Select(selectState).selectByVisibleText(state);
@@ -123,14 +125,14 @@ public class SignInFormPage extends BasePage{
         return this;
     }
 
-    public SignInFormPage postalCode(String postalCode){
+    public SignUpFormPage postalCode(String postalCode){
         //Fill in postal code
         browser.findElement(By.id("postcode")).sendKeys(postalCode);
 
         return this;
     }
 
-    public SignInFormPage country(String country){
+    public SignUpFormPage country(String country){
         //Select country
         WebElement selectCountry = browser.findElement(By.id("id_country"));
         new Select(selectCountry).selectByVisibleText(country);
@@ -138,14 +140,14 @@ public class SignInFormPage extends BasePage{
         return this;
     }
 
-    public SignInFormPage mobilePhone(String mobilePhone){
+    public SignUpFormPage mobilePhone(String mobilePhone){
         //Fill in mobile phone
         browser.findElement(By.id("phone_mobile")).sendKeys(mobilePhone);
 
         return this;
     }
 
-    public SignInFormPage addressAlias(String addressAlias){
+    public SignUpFormPage addressAlias(String addressAlias){
         //Fill an address alias
         browser.findElement(By.id("alias")).clear();
         browser.findElement(By.id("alias")).sendKeys(addressAlias);
@@ -156,34 +158,6 @@ public class SignInFormPage extends BasePage{
     public MyAccountPage clickOnRegister(){
         //Click the 'Register' button
         browser.findElement(By.id("submitAccount")).click();
-
-        return new MyAccountPage(browser);
-    }
-
-   public MyAccountPage registerCustomer(String firstName, String lastName, String emailFilled, String password, String day,
-                                      String month, String year, String firstNameAddress, String lastNameAddress, String company,
-                                      String address, String city, String state, String postalCode, String country, String mobilePhone,
-                                      String addressAlias){
-        selectTitle();
-        firstName(firstName);
-        lastName(lastName);
-        checkEmailFilled(emailFilled);
-        password(password);
-        dayOfBirth(day);
-        monthOfBirth(month);
-        YearOfBirth(year);
-        selectNewsletter();
-        firstNameAddress(firstNameAddress);
-        lastNameAddress(lastNameAddress);
-        companyName(company);
-        address(address);
-        city(city);
-        state(state);
-        postalCode(postalCode);
-        country(country);
-        mobilePhone(mobilePhone);
-        addressAlias(addressAlias);
-        clickOnRegister();
 
         return new MyAccountPage(browser);
     }

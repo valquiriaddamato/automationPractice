@@ -7,11 +7,11 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.util.concurrent.TimeUnit;
 
-public class BaseStepDefinitions {
+public class BaseStepsDefinitions {
 
     public WebDriver browser;
 
-    public BaseStepDefinitions(){
+    public BaseStepsDefinitions(){
         // Opening the browser
         System.setProperty("webdriver.chrome.driver","./src/test/resources/drivers/chromedriver.exe");
         browser = new ChromeDriver();

@@ -6,11 +6,11 @@ import org.openqa.selenium.WebDriver;
 import pages.MyAccountPage;
 
 public class MyAccountStepsDefinitions {
-    private BaseStepDefinitions context;
+    private BaseStepsDefinitions context;
     private WebDriver browser;
     private MyAccountPage myAccountPage;
 
-    public MyAccountStepsDefinitions(BaseStepDefinitions context) {
+    public MyAccountStepsDefinitions(BaseStepsDefinitions context) {
         this.context = context;
         browser = this.context.browser;
         myAccountPage = new MyAccountPage(browser);

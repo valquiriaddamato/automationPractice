@@ -1,8 +1,5 @@
 pages\BasePage.class
-support\Web.class
 tests\RegisterCustomerTest.class
-pages\HomePage.class
 pages\SignInPage.class
-pages\SignInFormPage.class
 tests\LoginTest.class
 pages\MyAccountPage.class

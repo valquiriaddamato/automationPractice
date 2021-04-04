@@ -12,6 +12,7 @@ public class SignInPage extends BasePage{
     public SignInPage clickOnSignIn(){
         //Click on 'Sign In'
         browser.findElement(By.linkText("Sign in")).click();
+
         return this;
     }
 
@@ -22,18 +23,11 @@ public class SignInPage extends BasePage{
         return this;
     }
 
-    public SignInFormPage clickOnCreateAnAccount (){
+    public SignUpFormPage clickOnCreateAnAccount (){
         //Click the 'Create an account' button
         browser.findElement(By.id("SubmitCreate")).click();
 
-        return new SignInFormPage(browser);
-    }
-
-    public SignInFormPage startRegistration(String email){
-        emailSignInForm(email);
-        clickOnCreateAnAccount();
-
-        return new SignInFormPage(browser);
+        return new SignUpFormPage(browser);
     }
 
     public SignInPage emailLoginForm (String emailLogin){
